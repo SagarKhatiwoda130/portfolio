@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Sagar Khatiwoda</title>
+  <link rel="icon" sizes="48x48" type="image/png" href="Images/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <button class="menu-toggle">☰</button>
+
+      <h1>
+        <span><i class="fa-regular fa-less-than"></i>&nbsp;</span> Sagar Khatiwoda
+        <span>&nbsp;&sol;&nbsp;<i class="fa-regular fa-greater-than"></i></span>
+      </h1>
+
+      <nav id="nav">
+        <ul id="navbar">
+          <li><a href="index.html" class="homeUnderline">Home</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contactUs.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-container">
+      <div class="content1">
+        <h1>I'm Sagar Khatiwoda and I'm a &nbsp;</h1>
+        <h1 id="typeWriter1"></h1>
+      </div>
+
+      <div class="hero-bottom">
+        <div class="content2">
+          <p id="typeWriter2"></p>
+          <a href="#about" class="btn" onclick="typeWriter()">More About</a>
+        </div>
+
+        <div class="profile-picture">
+          <div class="pic">
+            <img src="Images/profile_pic.jpg" alt="Profile Picture" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="btns">
+      <button class="heroBtn">
+        <a href="">Download CV</a>
+      </button>
+      <button class="heroBtn">
+        <a href="contactUs.html">Contact Me</a>
+      </button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="copyright">
+      <p>&copy; 2025 &nbsp; S. Khatiwoda | All Rights Reserved</p>
+    </div>
+    <div class="footer-social-icons">
+      <button>
+        <a href="https://www.facebook.com/sagar.khatiwoda.982?mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
+      </button>
+      <button>
+        <a href="https://www.instagram.com/sagar_khatiwoda/"><i class="fa-brands fa-instagram"></i></a>
+      </button>
+      <button>
+        <a href="https://api.whatsapp.com/send?phone=9779868058665"><i class="fa-brands fa-whatsapp"></i></a>
+      </button>
+      <button>
+        <a href="https://www.threads.net/@sagar_khatiwoda"><i class="fa-brands fa-threads"></i></a>
+      </button>
+    </div>
+
+    <button onclick="topFunction()" id="backBtn" class="back-to-top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+  </footer>
+
+  <script src="js/typewriter.js"></script>
+  <script src="js/closeNav.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>

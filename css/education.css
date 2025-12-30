@@ -1,0 +1,138 @@
+.education-section {
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background-color: #ed0000;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.timeline-item-content {
+  display: flex;
+  align-items: center;
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  box-shadow: 10px 15px 10px rgba(32, 32, 32, 0.607);
+  padding: 20px;
+  flex: 1;
+  max-width: 45%;
+  position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.timeline-item-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 15px 10px rgba(175, 69, 69, 0.508);
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.image-container img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 3px solid #ed0000;
+}
+
+.education-text {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.education-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #ca0909;
+}
+
+.education-text h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.education-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #ed0000;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .education-section {
+    padding-top: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-item:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .timeline-item-content {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-container {
+    margin-bottom: 15px;
+  }
+
+  .education-text {
+    padding: 0;
+  }
+
+  .timeline-item::before {
+    left: 10px;
+  }
+}

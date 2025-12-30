@@ -1,0 +1,120 @@
+.skills-section {
+  padding: 0px 20px;
+  padding-bottom: 80px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  box-shadow: 10px 15px 10px rgba(32, 32, 32, 0.607);
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 15px 10px rgba(175, 69, 69, 0.508);
+}
+
+.skill-card i {
+  font-size: 3rem;
+  color: #282727e2;
+  border: 3px solid #ed0000;
+  border-radius: 5px;
+  padding: 8px 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.skill-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 1rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 7px;
+  background-color: #ddd;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 15px;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  background-color: #ed0000;
+  border-radius: 5px;
+  transition: width 1.5s ease-in-out;
+}
+
+.progress-bar .percent {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-weight: bold;
+  color: #ed0000;
+  font-size: 0.9rem;
+  transition: left 1.5s ease-in-out;
+}
+
+.skills-button-container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.skills-button {
+  padding: 12px 25px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  background: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.skills-button:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .skills-section {
+    padding-top: 10px;
+  }
+
+  .skill-card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-section {
+    padding-top: 10px;
+  }
+
+  .skill-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .skill-card i {
+    font-size: 2.5rem;
+  }
+}
