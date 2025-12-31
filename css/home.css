@@ -1,7 +1,15 @@
-.hero{
+/* .hero{
     position: relative;
     overflow: hidden;
+} */
+
+.hero {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: visible;
+    z-index: 0;
 }
+
 
 .hero-container {
     position: relative;

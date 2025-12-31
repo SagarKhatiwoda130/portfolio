@@ -37,22 +37,41 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: fixed; 
   top: 0;
-    z-index: 1000000;
+  z-index: 1000000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 60px;
   overflow: visible;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 9999;
+  background: radial-gradient(
+    circle at 70% 50%,
+    rgba(238, 174, 202, 1) 0%,
+    rgb(145, 167, 192) 100%
+  );
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
 .header-container {
   width: 1250px;
   height: 60px;
   margin: 20px auto;
   z-index: 99999;
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow: visible;
 }
+
+
 
 header h1 {
   float: left;
@@ -294,6 +313,18 @@ html {
     border-radius: 10px;
     transition: all 0.5s ease;
   }
+
+  nav.open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    left: 15px;
+    z-index: 10000;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+}
+
 
   nav ul {
     flex-direction: column;
