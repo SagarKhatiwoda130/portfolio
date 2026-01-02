@@ -18,33 +18,43 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/breadcrumb.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/projects.css" />
   </head>
   <body>
+    <div id="menu-overlay" aria-hidden="true"></div>
+
     <header>
       <div class="header-container">
-        <button class="menu-toggle">☰</button>
-
-        <h1>
-          <span><i class="fa-regular fa-less-than"></i>&nbsp;</span> Sagar
-          Khatiwoda
-          <span
-            >&nbsp;&sol;&nbsp;<i class="fa-regular fa-greater-than"></i
-          ></span>
-        </h1>
-
-        <nav id="nav">
-          <ul id="navbar">
-            <li><a href="index.html" class="homeUnderline">Home</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contactUs.html">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="header-left">
+          <h1>
+            <span><i class="fa-regular fa-less-than"></i>&nbsp;</span> Sagar
+            <span>&nbsp;/&nbsp;<i class="fa-regular fa-greater-than"></i></span>
+          </h1>
+        </div>
+        <div class="header-right">
+          <button
+            class="menu-toggle gradient-text"
+            aria-label="Toggle navigation menu"
+          >
+            ☰
+          </button>
+          <nav id="nav" role="navigation" aria-label="Main Navigation">
+            <ul id="navbar">
+              <li><a href="index.html" class="gradient-text">Home</a></li>
+              <li><a href="skills.html" class="gradient-text">Skills</a></li>
+              <li>
+                <a href="education.html" class="gradient-text">Education</a>
+              </li>
+              <li>
+                <a href="projects.html" class="gradient-text">Projects</a>
+              </li>
+              <li>
+                <a href="contactUs.html" class="gradient-text">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -146,8 +156,6 @@
       </button>
     </footer>
 
-    <script src="js/breadcrumb.js"></script>
-    <script src="js/closeNav.js"></script>
-    <script src="js/scroll.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
